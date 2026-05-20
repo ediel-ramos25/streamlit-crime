@@ -114,7 +114,7 @@ if len(selected_dias) == 0:
 # crear filtro de periodo del día en la barra lateral
 selected_period = st.sidebar.selectbox(
     "AM / PM",
-    ["AM", "PM","Ambos"]
+    ["Ambos", "AM","PM"]
 )
 
 if selected_period == "Ambos":
