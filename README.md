@@ -1,10 +1,10 @@
-# 📊 Dashboard de Crímenes en Puerto Rico
+# Dashboard de Crímenes en Puerto Rico
 
 Esta aplicación permite analizar y visualizar datos de crímenes reportados en Puerto Rico de manera interactiva.
 
 ---
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
 - Filtrado dinámico por:
   - Área geográfica
@@ -23,7 +23,7 @@ Esta aplicación permite analizar y visualizar datos de crímenes reportados en 
 
 ---
 
-## 🗺️ Mapa interactivo
+## Mapa interactivo
 
 El mapa muestra:
 
@@ -33,7 +33,7 @@ El mapa muestra:
 
 ---
 
-## 📈 Índice de gravedad de delitos
+## Índice de gravedad de delitos
 
 - Asesinato → 10  
 - Violación → 9.5  
@@ -48,7 +48,7 @@ El mapa muestra:
 
 ---
 
-## 🧠 Tecnologías utilizadas
+## Tecnologías utilizadas
 
 - Python  
 - Streamlit  
@@ -58,13 +58,13 @@ El mapa muestra:
 
 ---
 
-## 📁 Fuente de datos
+## Fuente de datos
 
 https://cdat.uprh.edu/~eramos/data/crime_processed.csv  
 
 ---
 
-## 👨‍💻 Autor
+## Autor
 
 Ediel J. Ramos De Jesús  
 Proyecto Final – Comp3082  
