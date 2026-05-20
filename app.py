@@ -50,7 +50,7 @@ def dameIndice(delito):
   else:
     return 4
 
-df["Indice de Gravedad"] = pd.Series(map(dameIndice,df["Delito"]))
+df["Indice de Gravedad"] = df["Delito"].apply(dameIndice)
 
 def cambia_leng(nombreDiaSemana):
   if nombreDiaSemana == "Monday":
@@ -68,7 +68,7 @@ def cambia_leng(nombreDiaSemana):
   elif nombreDiaSemana == "Sunday":
     return "Domingo"
   
-df["NombreDiaSemana"] = pd.Series(map(cambia_leng, df["NombreDiaSemana"]))
+df["NombreDiaSemana"] = df["NombreDiaSemana"].apply(cambia_leng)
 
 df["Periodo"] = df["Hora"].apply(
     lambda x: "AM" if int(x) < 12 else "PM"
