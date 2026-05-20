@@ -96,15 +96,19 @@ else:
 delito = df["Delito"].unique()
 
 selected_delitos = st.sidebar.multiselect("Seleccione delitos", delito, default=delito)
-
+# advertencia si no se selecciona ningún delito (evita errores)
+if len(selected_delitos) == 0:
+    st.error("Debe seleccionar al menos un valor.")
+    st.stop()
+# crear filtro de días de la semana en la barra lateral
 dias = df["NombreDiaSemana"].unique()
 selected_dias = st.sidebar.multiselect(
     "Seleccione Dias",
     dias,
     default=dias
 )
-# advertencia si no se selecciona ningún delito (evita errores)
-if len(selected_delitos) == 0:
+# levantar advertencia si no se selecciona ningún día de la semana (evita errores)
+if len(selected_dias) == 0:
     st.error("Debe seleccionar al menos un valor.")
     st.stop()
 # crear filtro de periodo del día en la barra lateral
